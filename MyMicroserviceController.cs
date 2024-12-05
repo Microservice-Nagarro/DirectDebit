@@ -1,12 +1,12 @@
-using BHF.MS.MyMicroservice.Models;
-using BHF.MS.MyMicroservice.Services;
+using BHF.MS.DirectDebit.Models;
+using BHF.MS.DirectDebit.Services;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BHF.MS.MyMicroservice.Controllers
+namespace BHF.MS.DirectDebit.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class MyMicroserviceController(ILogger<MyMicroserviceController> logger, IExampleService service) : ControllerBase
+    public class DirectDebitController(ILogger<DirectDebitController> logger, IExampleService service) : ControllerBase
     {
         [HttpGet]
         [ResponseCache(VaryByQueryKeys = ["*"], Duration = 60)]
